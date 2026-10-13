@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | QuickBite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="form-page">
+
+<header class="navbar">
+    <a href="index.html" class="logo">🍔 QuickBite</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="registration.html">Register</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="forgot.html">Forgot</a>
+    </nav>
+</header>
+
+<div class="form-container">
+    <div class="form-icon">👋</div>
+    <h2>Welcome Back!</h2>
+    <p class="subtitle">Login to your QuickBite account</p>
+
+    <form id="loginForm">
+        <label>Email Address</label>
+        <input type="email" id="loginEmail"
+               placeholder="Enter your email" required>
+
+        <label>Password</label>
+        <input type="password" id="loginPassword"
+               placeholder="Enter your password" required>
+
+        <div class="forgot-link">
+            <a href="forgot.html">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn full-btn">Login</button>
+        <p id="loginMessage" class="message"></p>
+    </form>
+
+    <p class="form-bottom">
+        Don't have an account?
+        <a href="registration.html">Register Now</a>
+    </p>
+    <p class="form-bottom"><a href="index.html">← Back to Home</a></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
