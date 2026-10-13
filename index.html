@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite | Online Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">🍔 QuickBite</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#food">Food Menu</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="login.html" class="nav-btn" id="accountLink">Login</a>
+        <a href="registration.html" class="nav-btn">Register</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="tagline">FRESH FOOD • FAST DELIVERY</p>
+        <h1>Your Favourite Food,<br>
+            <span>Delivered Fresh.</span></h1>
+        <p>Order delicious food from the comfort of your home.</p>
+        <a href="#food" class="btn">Explore Food</a>
+        <a href="registration.html" class="btn btn-light">Join Us</a>
+    </div>
+</section>
+
+<section class="section" id="food">
+    <h2>Popular Dishes</h2>
+    <p class="subtitle">Discover something delicious today!</p>
+
+    <div class="food-grid">
+        <div class="food-card">
+            <div class="food-emoji">🍕</div>
+            <h3>Cheese Pizza</h3>
+            <p>Cheesy, tasty and freshly baked.</p>
+            <div class="food-bottom">
+                <strong>₹199</strong>
+                <button class="small-btn" onclick="addToCart('Cheese Pizza',199)">Add +</button>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <div class="food-emoji">🍔</div>
+            <h3>Classic Burger</h3>
+            <p>A juicy burger for your cravings.</p>
+            <div class="food-bottom">
+                <strong>₹129</strong>
+                <button class="small-btn" onclick="addToCart('Classic Burger',129)">Add +</button>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <div class="food-emoji">🍛</div>
+            <h3>Chicken Biryani</h3>
+            <p>Fragrant rice with delicious spices.</p>
+            <div class="food-bottom">
+                <strong>₹249</strong>
+                <button class="small-btn" onclick="addToCart('Chicken Biryani',249)">Add +</button>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <div class="food-emoji">🍟</div>
+            <h3>Crispy Fries</h3>
+            <p>Golden, crispy and perfectly salted.</p>
+            <div class="food-bottom">
+                <strong>₹99</strong>
+                <button class="small-btn" onclick="addToCart('Crispy Fries',99)">Add +</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-summary">
+        🛒 Cart Items: <strong id="cartCount">0</strong>
+        <span> | Total: ₹<strong id="cartTotal">0</strong></span>
+    </div>
+</section>
+
+<section class="offer-section">
+    <h2>Good Food. Good Mood.</h2>
+    <p>Explore your favourites and enjoy every bite.</p>
+    <a href="login.html" class="btn">Order Now</a>
+</section>
+
+<footer>
+    <p>© 2026 QuickBite | Online Food Delivery</p>
+    <p>
+        <a href="feedback.html">Give Feedback</a> |
+        <a href="login.html">Login</a> |
+        <a href="registration.html">Register</a>
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

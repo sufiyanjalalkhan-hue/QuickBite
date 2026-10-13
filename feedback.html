@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | QuickBite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="form-page">
+
+<header class="navbar">
+    <a href="index.html" class="logo">🍔 QuickBite</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="registration.html">Register</a>
+    </nav>
+</header>
+
+<div class="form-container">
+    <div class="form-icon">💬</div>
+    <h2>Share Your Feedback</h2>
+    <p class="subtitle">Help us make QuickBite better</p>
+
+    <form id="feedbackForm">
+        <label>Your Name</label>
+        <input type="text" id="feedbackName"
+               placeholder="Enter your name" required>
+
+        <label>Email Address</label>
+        <input type="email" id="feedbackEmail"
+               placeholder="Enter your email" required>
+
+        <label>Rate Your Experience</label>
+        <select id="feedbackRating" required>
+            <option value="">Select a rating</option>
+            <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+            <option value="4">⭐⭐⭐⭐ - Very Good</option>
+            <option value="3">⭐⭐⭐ - Good</option>
+            <option value="2">⭐⭐ - Average</option>
+            <option value="1">⭐ - Poor</option>
+        </select>
+
+        <label>Your Message</label>
+        <textarea id="feedbackMessage"
+                  placeholder="Write your feedback here..."
+                  rows="5" required></textarea>
+
+        <button type="submit" class="btn full-btn">
+            Submit Feedback
+        </button>
+        <p id="feedbackStatus" class="message"></p>
+    </form>
+
+    <p class="form-bottom"><a href="index.html">← Back to Home</a></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
